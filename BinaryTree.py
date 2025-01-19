@@ -1,5 +1,5 @@
 '''
-This is a program for binary tree in payoff lattice
+This is a class for binary tree in payoff lattice
 '''
 
 class BinaryTree:
