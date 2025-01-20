@@ -1,5 +1,5 @@
 '''
-This is a class for binary tree in payoff lattice
+This is a class for binary tree used in payoff lattice
 '''
 
 class BinaryTree:
@@ -34,7 +34,7 @@ class BinaryTree:
             return
         self.data[level][index] = data
     
-    # This function add 1 or 2 children (left and right) 
+    # This function adds 1 or 2 children (left and right) 
     #   to the node level-th level with index in that level
     def add_child(self, level, index, left, right):
         if level not in self.data:
