@@ -1,5 +1,5 @@
 '''
-This is a class for binary tree used in payoff lattice
+This is a class for binary tree in payoff lattice
 '''
 
 class BinaryTree:
@@ -34,7 +34,7 @@ class BinaryTree:
             return
         self.data[level][index] = data
     
-    # This function adds 1 or 2 children (left and right) 
+    # This function add 1 or 2 children (left and right) 
     #   to the node level-th level with index in that level
     def add_child(self, level, index, left, right):
         if level not in self.data:
@@ -62,8 +62,8 @@ class BinaryTree:
                 self.data[levelNew] = {indexRight: right}
     
     def sanity_check(self):
-        if q_u > 1 or q_u < 0:
-            rint(f"Sanity check failed, q_u is not between 0 and 1.")
+        if self.q_u > 1 or self.q_u < 0:
+            print(f"Sanity check failed, q_u is not between 0 and 1.")
             return False
         total_level = len(self.data)
         for i in range(total_level):
